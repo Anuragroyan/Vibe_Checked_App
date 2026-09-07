@@ -1,97 +1,46 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+🎨 VibeCheck
 
-# Getting Started
+VibeCheck is a React Native micro-journaling application that allows users to capture their daily mood using emojis, colors, and short 3-word phrases. It transforms individual mood check-ins into a dynamic Mood Mosaic, providing a simple visual way to reflect on daily emotions while demonstrating modern React Native development practices.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+✨ Key Features
 
-## Step 1: Start Metro
+* 🎨 Daily mood check-ins
+* 😊 Emoji-based mood selection
+* 🌈 Color-based mood representation
+* 📝 3-word mood journaling
+* 🧩 Dynamic Mood Mosaic
+* ➕ Create mood entries
+* ✏️ Update existing entries
+* 🗑️ Delete mood entries
+* 🔍 Browse and review previous check-ins
+* 🔄 Redux Toolkit state management
+* 🎯 Redux selectors for derived state
+* 💾 Local data persistence
+* 🧭 React Navigation
+* 📱 Clean and interactive React Native UI
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+🏗️ Architecture & Workflow
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+The application uses Redux Toolkit to manage mood-related application state, with selectors used to efficiently derive and display mood data. Users create daily check-ins containing an emoji, color, and short phrase, which are stored locally and transformed into the visual Mood Mosaic. CRUD operations allow users to maintain their journal entries over time.
 
-```sh
-# Using npm
+🛠️ Tech Stack
+
+React Native • JavaScript • Redux Toolkit • Redux Selectors • React Navigation • Local Storage • CRUD Operations
+
+▶️ Run the App
+
+1. Install dependencies
+
+npm install
+
+2. Start Metro
+
 npm start
 
-# OR using Yarn
-yarn start
-```
+3. Run on Android
 
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
 npm run android
 
-# OR using Yarn
-yarn android
-```
+🎯 Project Purpose
 
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project demonstrates how to build a state-driven React Native application with Redux Toolkit, navigation, CRUD operations, selectors, and local persistence. It provides practical experience in managing structured user-generated data and transforming it into an interactive visual experience.
